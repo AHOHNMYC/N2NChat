@@ -3,6 +3,13 @@
 	<groupId>plugins</groupId>
 	<artifactId>DarknetChat</artifactId>
 	<version>0.0.1</version>
+	<repositories>
+		<repository>
+			<id>pterodactylus-maven</id>
+			<name>Pterodactylus Repository</name>
+			<url>https://maven.pterodactylus.net</url>
+		</repository>
+	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -16,10 +23,11 @@
 			<artifactId>fred</artifactId>
 			<version>0.7.5.1497</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 		<dependency>
-			<groupId>org.apache.commons</groupId>
+			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
-			<version>2.0.1</version>
+			<version>2.15.1</version>
 		</dependency>
 	</dependencies>
 	<properties>
