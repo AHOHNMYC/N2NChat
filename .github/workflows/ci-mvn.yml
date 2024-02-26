@@ -15,9 +15,9 @@ jobs:
         distribution: 'temurin'
     - name: Download dependencies
       run: |
-        mvn install:install-file -Dfile=freenet.jar -DgroupId=org.freenetproject -DartifactId=fred -Dversion=0.7.5.1387 -Dpackaging=jar
-        mvn install:install-file -Dfile=freenet-ext.jar -DgroupId=org.freenetproject -DartifactId=freenet-ext -Dversion=29 -Dpackaging=jar
-        mvn install:install-file -Dfile=commons-io-2.0.1.jar -DgroupId=org.apache.commons -DartifactId=commons-io -Dversion=2.0.1 -Dpackaging=jar
+        mvn --no-transfer-progress install:install-file -Dfile=freenet.jar -DgroupId=org.freenetproject -DartifactId=fred -Dversion=0.7.5.1387 -Dpackaging=jar
+        mvn --no-transfer-progress install:install-file -Dfile=freenet-ext.jar -DgroupId=org.freenetproject -DartifactId=freenet-ext -Dversion=29 -Dpackaging=jar
+        mvn --no-transfer-progress install:install-file -Dfile=commons-io-2.0.1.jar -DgroupId=org.apache.commons -DartifactId=commons-io -Dversion=2.0.1 -Dpackaging=jar
     - name: Build with Maven
       run: mvn package
     - name: Generate Javadoc
