@@ -10,11 +10,11 @@
 			<version>3.8.2</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.freenetproject/fred -->
 		<dependency>
 			<groupId>org.freenetproject</groupId>
 			<artifactId>fred</artifactId>
-			<version>0.7.5.1491</version>
-			<scope>provided</scope>
+			<version>0.7.5.1497</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
