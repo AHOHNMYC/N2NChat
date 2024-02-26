@@ -95,6 +95,7 @@
 					<links>
 						<link>http://download.oracle.com/javase/8/docs/api/</link>
 					</links>
+					<source>8</source>
 				</configuration>
 			</plugin>
 		</plugins>
