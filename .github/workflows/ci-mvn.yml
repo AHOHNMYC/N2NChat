@@ -3,6 +3,10 @@ on:
   push:
   pull_request:
 
+env:
+  # Remove useless trace in buid logs
+  MAVEN_ARGS: --no-transfer-progress
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,7 +18,7 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Build with Maven
-      run: mvn --no-transfer-progress package
+      run: mvn package
     - name: Generate Javadoc
       run: mvn javadoc:javadoc
     - name: Upload N2NChat
